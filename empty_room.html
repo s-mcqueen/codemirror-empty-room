@@ -1,0 +1,50 @@
+<!doctype html>
+
+<title>Interview practice space</title>
+
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" href="codemirror.css">
+
+<script src="codemirror.js"></script>
+<script src="matchbrackets.js"></script>
+<script src="python.js"></script>
+
+<!-- Override codemirror styles -->
+<style type="text/css">
+
+.CodeMirror {
+  height: 100%;
+}
+
+</style>
+
+<!-- Write code in here -->
+<textarea id="code" name="code">
+# Codemirror practice area with Python 2.7 syntax
+
+
+
+
+
+
+
+
+
+
+
+
+</textarea>
+
+<!-- Initialize codemirror -->
+<script>
+  var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+    mode: {name: "python",
+           version: 2.7,
+           singleLineStringErrors: false},
+    lineNumbers: true,
+    indentUnit: 4,
+    matchBrackets: true
+});
+
+</script>
